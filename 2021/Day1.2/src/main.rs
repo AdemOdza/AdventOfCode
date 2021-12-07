@@ -1,7 +1,6 @@
 use std::fs;
 
 fn main() {
-    
     let contents = fs::read_to_string("data.txt");
     let mut v: Vec<i32> = Vec::new();
 
@@ -10,15 +9,16 @@ fn main() {
         v.push(temp);
     }
 
-    let mut prev = v[0];
+    let mut x = v[0] + v[1] + v[2];
     let mut count = 0;
-    for i in v{
-        if i > prev{
+    for i in 1..v.len()-2{
+        let temp = v[i] + v[i+1] + v[i+2];
+        if temp > x {
             count = count + 1;
-        } 
-        prev = i;      
+        }
+
+        x = temp;
     }
 
     println!("Count is {}", count);
-    
 }
