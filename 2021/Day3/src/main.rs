@@ -39,4 +39,16 @@ fn main() {
     }
     print!("Gamma: {} and Epsilon: {}", isize::from_str_radix(&gamma[..], 2).unwrap(), isize::from_str_radix(&epsilon[..], 2).unwrap());
 
+    // let mostCommon: char = if i_count > o_count {'1'} else {'0'};
+
+    // let mut co2 = String::new();
+    // for i in 0..v.len(){
+    //     if v[i][0] == mostCommon {
+
+    //     }
+    //     else {
+
+    //     }
+
+    // }
 }
