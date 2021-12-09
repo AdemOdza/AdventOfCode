@@ -6,5 +6,11 @@ fn main() {
     let numbers: Vec<i32> = split.next().unwrap().split(',').map(|s| s.parse().unwrap()).collect();
     println!("{:?}", numbers);
 
+    for block in split {
 
+    }
+}
+
+fn check_bingo() {
+    
 }
