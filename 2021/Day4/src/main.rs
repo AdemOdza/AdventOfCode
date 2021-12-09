@@ -1,13 +1,10 @@
 use std::fs;
 fn main() {
     let contents = fs::read_to_string("data.txt").unwrap();
-    let split = contents.trim().split("\n\n");
+    let mut split = contents.trim().split("\n\n");
 
-    let mut seq: Vec<char> = split[0].trim().to_owned().chars().collect();
+    let numbers: Vec<i32> = split.next().unwrap().split(',').map(|s| s.parse().unwrap()).collect();
+    println!("{:?}", numbers);
 
-
-    // for i in 1..split.len() {
-
-    // }
 
 }
