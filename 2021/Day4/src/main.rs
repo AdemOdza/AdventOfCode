@@ -7,10 +7,8 @@ fn main() {
     println!("{:?}", numbers);
 
     for block in split {
-
+            let board: Vec<Vec<i32>> = block.split('\n')
+            .map(|x| x.split(' ').map(|y| y.parse::<i32>())).collect();
     }
 }
 
-fn check_bingo() {
-    
-}
